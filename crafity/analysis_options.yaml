@@ -1,0 +1,26 @@
+include: package:lint/analysis_options.yaml
+
+# Not happy with the default? Customize the rules depending on your needs. 
+# Here are some examples:
+linter:
+  rules:
+    # Make constructors the first thing in every class
+    prefer_const_constructors: false
+    avoid_print: false
+    avoid_void_async: false
+    file_names: false
+    invariant_booleans: false
+    directives_ordering: false
+    sort_child_properties_last: false  
+    sort_pub_dependencies: false  
+
+analyzer:
+  # exclude:
+  #   - "**/*.g.dart"
+  #   - "**/*.freezed.dart"
+
+  errors:
+    missing_required_param: error
+    missing_return: error    
+    sort_unnamed_constructors_first: ignore
+
